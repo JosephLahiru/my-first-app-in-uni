@@ -17,21 +17,26 @@ public class Exercise03 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise03);
-
+//Method 1
+//        display = findViewById(R.id.text1);
+//        click = findViewById(R.id.btnClick);
+//
+//        click.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (isTextOne) {
+//                    display.setText("Welcome to Android Studio!!!");
+//                } else {
+//                    display.setText("Hello, World!");
+//                }
+//
+//                isTextOne = !isTextOne;
+//            }
+//        });
+    }
+//Method 2
+    public void change_text(View view) {
         display = findViewById(R.id.text1);
-        click = findViewById(R.id.btnClick);
-
-        click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isTextOne) {
-                    display.setText("Welcome to Android Studio!!!");
-                } else {
-                    display.setText("Hello, World!");
-                }
-
-                isTextOne = !isTextOne;
-            }
-        });
+        display.setText("I love Java");
     }
 }

@@ -18,8 +18,8 @@ public class Exercise03 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise03);
 
-        textView = findViewById(R.id.textView);
-        button = findViewById(R.id.button);
+        textView = findViewById(R.id.text1);
+        button = findViewById(R.id.btnClick);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

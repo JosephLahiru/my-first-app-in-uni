@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 public class Exercise03 extends AppCompatActivity {
 
-    private TextView textView;
-    private Button button;
+    private TextView display;
+    private Button click;
     private boolean isTextOne = true; // Initial state
 
     @Override
@@ -18,16 +18,16 @@ public class Exercise03 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise03);
 
-        textView = findViewById(R.id.text1);
-        button = findViewById(R.id.btnClick);
+        display = findViewById(R.id.text1);
+        click = findViewById(R.id.btnClick);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (isTextOne) {
-                    textView.setText("Welcome to Android Studio!!!");
+                    display.setText("Welcome to Android Studio!!!");
                 } else {
-                    textView.setText("Hello, World!");
+                    display.setText("Hello, World!");
                 }
 
                 isTextOne = !isTextOne;
